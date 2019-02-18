@@ -12,11 +12,11 @@ import org.osgi.service.component.annotations.ReferencePolicyOption;
 
 @Component
 public class ComponentImpl {
-    // @Reference(cardinality=ReferenceCardinality.OPTIONAL, policy=ReferencePolicy.STATIC, policyOption=ReferencePolicyOption.GREEDY)
-    private volatile ITest atest;
+    @Reference(cardinality=ReferenceCardinality.OPTIONAL, policy=ReferencePolicy.DYNAMIC, policyOption=ReferencePolicyOption.RELUCTANT)
+    private ITest atest;
 
-    @Reference(cardinality=ReferenceCardinality.MULTIPLE, policy=ReferencePolicy.DYNAMIC, policyOption=ReferencePolicyOption.RELUCTANT)
-    private List<ITest> tests;
+    // @Reference(cardinality=ReferenceCardinality.MULTIPLE, policy=ReferencePolicy.DYNAMIC, policyOption=ReferencePolicyOption.RELUCTANT)
+    private volatile List<ITest> tests;
 
 
     @Activate
