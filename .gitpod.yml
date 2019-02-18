@@ -4,4 +4,4 @@ ports:
   - port: 8000
   - port: 8080
 tasks:
-  - command: cd osgi.refs && resolve app
+  - command: cd osgi.refs && resolve app && run app/target/debug.jar
