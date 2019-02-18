@@ -1,7 +1,7 @@
 # OSGi Declarative Services References
  Get up and running in 5 minutes or less with OSGi's declarative service references.
 
- ![TODO IMAGE]()
+ ![Gitpod REFS](https://github.com/Sandared/io.jatoms.osgi.refs/blob/master/onew-refs.PNG)
 
  ## Get started
  * [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/Sandared/io.jatoms.osgi.refs)
@@ -152,5 +152,5 @@ NOTE: If you define a variable to be STATIC and volatile, then bnd takes the val
 
 I've created a little table that shall serve as an overview about the expected behavior for all the combinations of all three attributes:
 
-
+![Refs Table](https://github.com/Sandared/io.jatoms.osgi.refs/blob/master/onew-ref-table.PNG)
 
