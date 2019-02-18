@@ -10,7 +10,11 @@
 
  ## Things to do
  * Play around with the code
- * Debug the whiteboard via `debug app/target/app.jar` (More information on [how to debug in GitPod](https://github.com/Sandared/io.jatoms.osgi.base/blob/master/README.md#how-to-debug-an-application-without-a-main-method))
+ * "Debug" the whiteboard via `run app/target/debug.jar`
+    * Once the application started a notfication should pop up that a port is exposed -> Choose: open in browser. The tab opened will say "not found", so just add /system/console to the url and if asked for credentials enter admin/admin.
+    * Now you should see the Apache Felix Webconsole. Go to OSGi -> Components -> ComponentImpl
+    * The interesting part is the line that states "Bound Service". here you can see if your reference is actually bound to another service instance, although it might have been null or empty at activation time of your component.
+    * Whenever you wnt to try a new combination of attributes, first stop any running framework by typing `stop 0` in the terminal in Gipod, then type `resolve app` to rebuild your app and then again start it by typing `run app/target/debug.jar`
  * Change the values `cardinality`, `policy` and `policyOption` for each reference to see the different effects on the behavior of the component (See below for an overview of the to expect effects). It's best to only have only one reference active at a time in order to only see the effect of one reference instead of a mixture of both. Just comment out the one you want to be disabled.
 
 ## Contribute
