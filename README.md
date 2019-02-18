@@ -1,5 +1,5 @@
-# OSGi Declarative Services References
- Get up and running in 5 minutes or less with OSGi's declarative service references.
+# OSGi Field References
+ Get up and running in 5 minutes or less with OSGi's declarative service field references.
 
  ![Gitpod REFS](https://github.com/Sandared/io.jatoms.osgi.refs/blob/master/onew-refs.PNG)
 
