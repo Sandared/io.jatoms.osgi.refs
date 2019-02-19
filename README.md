@@ -10,7 +10,7 @@
 
  ## Things to do
  * Play around with the code
- * "Debug" the whiteboard via `run app/target/debug.jar`
+ * "Debug" the example via `run app/target/debug.jar`
     * Once the application started a notfication should pop up that a port is exposed -> Choose: open in browser. The tab opened will say "not found", so just add /system/console to the url and if asked for credentials enter admin/admin.
     * Now you should see the Apache Felix Webconsole. Go to OSGi -> Components -> ComponentImpl
     * The interesting part is the line that states "Bound Service". here you can see if your reference is actually bound to another service instance, although it might have been null or empty at activation time of your component.
