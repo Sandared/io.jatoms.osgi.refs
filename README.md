@@ -159,7 +159,7 @@ I've created a little table that shall serve as an overview about the expected b
 ![Refs Table](https://github.com/Sandared/io.jatoms.osgi.refs/blob/master/onew-ref-table.PNG)
 
 ### Conclusion
-OSGi provides you with a really powerful dependency injection mechanism. This tutorial barely scratches the surface of what you can do with DS and their references in between. However, in most cases all you need is either a static, mandatory reference to the service you need or a whiteboard (see [my tutorial about whiteboards](http://bit.ly/jatoms-whiteboard)). I would dare say that those two types make up for 70% of my use cases. The other 30% are advanced stuff, where I try to introduce OSGi dependency injection into other frameworks, e.g., for Vaadin Flow I sketched such a solution.
+OSGi provides you with a really powerful dependency injection mechanism. This tutorial barely scratches the surface of what you can do with DS and their references in between. However, in most cases all you need is either a static, mandatory reference to the service you need or a whiteboard (see [my tutorial about whiteboards](http://bit.ly/jatoms-whiteboard)). I would dare say that those two types make up for 70% of my use cases. The other 30% are advanced stuff, where I try to introduce OSGi dependency injection into other frameworks, e.g., for Vaadin Flow I sketched such a solution making use of the prototype service scope.
 
 That said, there is still a lot of other stuff that might be of interest to you if you are working extensively with declarative services, e.g., method injection (@Reference on methods instead of fields) or target filters (in order to narrow down the number of eligible service instances for your reference). 
 
