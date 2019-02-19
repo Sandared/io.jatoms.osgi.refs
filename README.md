@@ -44,7 +44,7 @@ This in turn is picked up at runtime by for example Apache Felix SCR and accordi
 Now this has been a rather abstract explanation of what a reference is, let's see how such a reference works in action.
 
 ### How does a @Reference work?
-As explained before, another entity (e.g., Felix SCR) injects services depending on the values of the attributes of your @Reference annotation, but which values have which effect?
+As explained in [the tutorial about DS](https://github.com/Sandared/io.jatoms.osgi.ds), another entity (e.g., Felix SCR) injects services depending on the values of the attributes of your @Reference annotation, but which values have which effect?
 
 Let's start with what attributes actually exist and which are crucial to know for most cases:
 
